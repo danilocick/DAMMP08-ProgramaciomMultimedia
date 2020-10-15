@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--fila 0-->
+    <TextView
+        android:id="@+id/salidatotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@id/primerbotona"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/botonreset"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/botonreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset All"
+        app:layout_constraintBottom_toTopOf="@id/primerbotona"
+        app:layout_constraintLeft_toRightOf="@+id/salidatotal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--primera fila-->
+    <TextView
+        android:id="@+id/primerasalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/botonreset"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/primerbotona"
+        app:layout_constraintBottom_toTopOf="@id/segundobotona" />
+    <Button
+        android:id="@+id/primerbotona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintTop_toBottomOf="@id/botonreset"
+        app:layout_constraintLeft_toRightOf="@+id/primerasalida"
+        app:layout_constraintRight_toLeftOf="@id/primerbotonb"
+        app:layout_constraintBottom_toTopOf="@id/segundobotona" />
+    <Button
+        android:id="@+id/primerbotonb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:layout_constraintTop_toBottomOf="@id/botonreset"
+        app:layout_constraintLeft_toRightOf="@+id/primerbotona"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/segundobotona" />
+
+    <!--segunda fila-->
+    <TextView
+        android:id="@+id/segundasalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/primerbotona"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/segundobotona"
+        app:layout_constraintBottom_toTopOf="@id/tercerbotona" />
+    <Button
+        android:id="@+id/segundobotona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintTop_toBottomOf="@id/primerbotona"
+        app:layout_constraintLeft_toRightOf="@+id/segundasalida"
+        app:layout_constraintRight_toLeftOf="@id/segundobotonb"
+        app:layout_constraintBottom_toTopOf="@id/tercerbotona" />
+    <Button
+        android:id="@+id/segundobotonb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:layout_constraintTop_toBottomOf="@id/primerbotona"
+        app:layout_constraintLeft_toRightOf="@+id/segundobotona"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tercerbotona" />
+
+    <!--tercera fila-->
+    <TextView
+        android:id="@+id/tercerasalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/segundobotona"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tercerbotona"
+        app:layout_constraintBottom_toTopOf="@id/cuartobotona" />
+    <Button
+        android:id="@+id/tercerbotona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintTop_toBottomOf="@id/segundobotona"
+        app:layout_constraintLeft_toRightOf="@+id/tercerasalida"
+        app:layout_constraintRight_toLeftOf="@id/tercerbotonb"
+        app:layout_constraintBottom_toTopOf="@id/cuartobotona" />
+    <Button
+        android:id="@+id/tercerbotonb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:layout_constraintTop_toBottomOf="@id/segundobotona"
+        app:layout_constraintLeft_toRightOf="@+id/tercerbotona"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cuartobotona" />
+
+    <!--cuarta fila-->
+    <TextView
+        android:id="@+id/cuartasalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/tercerbotona"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cuartobotona"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <Button
+        android:id="@+id/cuartobotona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintTop_toBottomOf="@id/tercerbotona"
+        app:layout_constraintLeft_toRightOf="@+id/cuartasalida"
+        app:layout_constraintRight_toLeftOf="@id/cuartobotonb"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <Button
+        android:id="@+id/cuartobotonb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintTop_toBottomOf="@id/tercerbotona"
+        app:layout_constraintLeft_toRightOf="@+id/cuartobotona"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
